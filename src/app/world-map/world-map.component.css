@@ -1,0 +1,13 @@
+svg path{
+  cursor: pointer;
+}
+
+svg path:hover{
+  fill: darkorange;
+}
+
+h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

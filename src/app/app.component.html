@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="left-col">
+    <app-world-map
+      (svgIdChosen)="chosenSvgId = $event"
+      (incomeChosen)="chosenIncome = $event"
+      (capitalChosen)="chosenCapital = $event"
+      (regionChosen)="chosenRegion = $event"
+      (latitudeChosen)="chosenLatitude = $event"
+      (longitudeChosen)="chosenLongitude = $event"
+    >
+  </app-world-map>
+  </div>
+
+  <div class="right-col">
+    <app-country-info
+      [countryId]="chosenSvgId"
+      [countryIncome]="chosenIncome"
+      [countryCapital]="chosenCapital"
+      [countryRegion]="chosenRegion"
+      [countryLatitude]="chosenLatitude"
+      [countryLongitude]="chosenLongitude"
+    >
+  </app-country-info>
+  </div>
+</div>
+
+
+
+
+
+
+<router-outlet></router-outlet>
